@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Detective Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+
+</head>
+<body class="body">
+
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="heading">
+                <h1 class="heading-bar">GitHub Detective</h1>
+                <div class="btn-mode">
+                    <p class="mode-text">DARK</p>
+                    <div class="mode-icon-div"><img class="mode-icon" src="./assets/images/moon-icon.svg" alt=""></div>
+                </div>
+            </div>
+
+            <!--  input form -->
+
+            <form class="input-container">
+                <div class="search-bar-container">
+                    <img src="./assets/images/search-icon.svg" alt="">
+                    <input  id="input-field"  type="search" placeholder="Enter a github username...." id="" required>
+                    <div class="error">
+                        <p class="no-results">no result found</p>
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+            </form>
+
+            <div class="profile-container">
+
+                <div class="profile-header">
+                    <img id="avatar" src="" alt="">
+                    <div class="profile-info-wrapper">
+                        <div class="personal-info">
+                            <p class="user-name"></p>
+                            <a href="" target="_blank" rel="noopener noreferrer" id="user"></a>
+                            <p id="bio"></p>
+                        </div>
+                        <p id="date"></p>
+                    </div>
+                </div>
+                
+                <!-- / stats -->
+                <div class="stats-wapper">
+
+                    <div class="profile-stats">
+                        <p class="stats-title">Repos</p>
+                        <p id="repose" class="stat-value"></p>
+                    </div>
+
+                    <div class="profile-stats">
+                        <p class="stats-title">Followers</p>
+                        <p id="followers" class="stat-value"></p>
+                    </div>
+
+                    <div class="profile-stats">
+                        <p class="stats-title">Following</p>
+                        <p id="following" class="stat-value"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid-layout">
+
+                    <div class="profile-info">
+                        <div class="bottoms-div"><img src="./assets/images/location-icon.svg" alt="" class="location-img"></div>
+                        <p id="location"></p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottoms-div"><img src="./assets/images/website-icon.svg" alt="" class="location-img"></div>
+                        <a href="" id="website"></a>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottoms-div"><img src="./assets/images/twitter-icon.svg" alt="" class="location-img"></div>
+                        <p id="twitter"></p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="bottoms-div"><img src="./assets/images/company-icon.svg" alt="" class="location-img"></div>
+                        <p id="company"></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
